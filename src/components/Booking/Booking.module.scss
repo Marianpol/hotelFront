@@ -1,0 +1,65 @@
+p {
+  text-align: center;
+}
+.emptyLabel {
+  background-color:#e2e2e2;
+  margin-top: 10px; 
+}
+  .modal_main {
+    position:fixed;
+    background: white;
+    max-width: 35%;
+    height: auto;
+    top:50%;
+    left:50%;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 2%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .show_modal {
+    display: block;
+    background-color:rgba(0,0,0,0.5);
+  }
+  
+  .hide_modal {
+    display: none;
+  }
+
+  .closeButton {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: #830605;
+    border: none;
+    top: 15px;
+    right: 15px;
+    
+    &::before,
+    &::after {
+        content: '';
+        width: 16px;
+        height: 2px;
+        position: absolute;
+        background: white;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        transform-origin: 50%;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }  
+}
+.reservationButton {
+  text-align: center;
+  margin-top: 10px;
+}
